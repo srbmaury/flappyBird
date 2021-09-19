@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+}
+
+.background{
+	height: 100vh;
+	width: 100vw;
+	background-image:url('back.png');
+}
+
+.bird{
+	height: 10vmin;
+	width: 10vmin;
+	position: fixed;
+	top: 40vh;
+	left: 34vw;
+	z-index: 100;
+}
+
+.pipes{
+	position: fixed;
+	top: 40vh;
+	left: 100vw;
+	height: 70vh;
+	width: 60px;
+	background-color: goldenrod;
+	border:2px solid black;
+}
+
+.message{
+	position: fixed;
+	height: 8vh;
+	font-size: 7vh;
+	font-weight: 100;
+	color: blue;
+	top: 41vh;
+	left: 44vw;
+	text-align: center;
+	visibility: hidden;
+	background: white;
+	border: 3px solid black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	padding:2px;
+	padding-top: 0px;
+	border-radius: 5px;
+	box-shadow:5px 5px grey;
+	cursor:pointer;
+}
+.restart{
+	position: fixed;
+	height: 8vh;
+	font-size: 7vh;
+	font-weight: 100;
+	color: black;
+	top: 41vh;
+	left: 44vw;
+	z-index:1000;
+	border-radius: 5px;
+	text-align: center;
+	visibility: hidden;
+}
+
+.score{
+	position: fixed;
+	z-index: 10;
+	height: 10vh;
+	font-size: 5vh;
+	font-weight: 100;
+	color:blue;
+	top: 0;
+	left: 0;
+}
+.score_val, .hiscore_val{
+	color: gold;
+	margin-right: 5vw;
+}
+.score_val, .score_title, .hiscore_title, .hiscore_val{
+	background: azure;
+	width:15vw;
+	height:6vw;
+	padding-right: 5px;
+	visibility: hidden;
+    margin: 0;
+    padding: 0;
+}
+.score_val, .highscore_val{
+	visibility: hidden;
+}
+.level{
+	color: rgb(105, 21, 214);
+	margin:auto;
+	margin-left:33vw;
+	margin-top: 7vw;
+	text-align: center;
+	line-height: 1.4em;
+}
+#levelTitle{
+	background-color: azure;
+	border-radius: 10px;
+	padding:1vmin 3vmin;
+	margin-bottom: 4vh;
+}
+.levelContents{
+	background-color: azure;
+	border-radius: 5px;
+	margin-bottom: 4px;
+	margin-left: 36%;
+	width:10vw;
+	cursor:pointer;
+}
+#newhighscore{
+	margin-left: 40vw;
+	margin-top: -14vh;
+	font-size: 10vmin;
+	font-weight:900;
+	visibility: hidden;
+}
+@media only screen and (max-width:500px){
+	*{
+		font-size: 20px;
+	}
+	.level{
+		margin-left: 20vw;
+	}
+	.levelContents{
+		margin-left: 30%;
+		width:30vw;
+	}
+	.bird{
+		top: 33vh;
+		left: 26vw;
+		width:12vw;
+		height:12vw;
+	}
+	.message{
+		top:39.5vh;
+		left:38vw;
+	}
+	.restart{
+		left:16vw;
+		top:30vh;
+		font-size: 25px;
+	}
+}
